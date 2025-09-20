@@ -14,7 +14,7 @@ use Filament\Pages\Page;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 
-class ManageSettings extends Page implements HasForms
+class ManagePinterestSettings extends Page implements HasForms
 {
     use InteractsWithForms;
 
@@ -24,7 +24,7 @@ class ManageSettings extends Page implements HasForms
 
     protected static \BackedEnum|string|null $navigationIcon = 'heroicon-o-cog-6-tooth';
 
-    protected static ?string $navigationLabel = 'Settings';
+    protected static ?string $navigationLabel = 'Pintest Settings';
 
     protected static \UnitEnum|string|null $navigationGroup = 'Configuration';
 

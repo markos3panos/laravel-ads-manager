@@ -50,4 +50,44 @@ final class SettingKeys
         'catalogs' => self::PINTEREST_ENDPOINT_CATALOGS,
         'product_groups' => self::PINTEREST_ENDPOINT_PRODUCT_GROUPS,
     ];
+
+    public const SHOPIFY_STORE_DOMAIN = 'store_domain';
+    public const SHOPIFY_API_KEY = 'api_key';
+    public const SHOPIFY_API_SECRET = 'api_secret';
+    public const SHOPIFY_ACCESS_TOKEN = 'access_token';
+    public const SHOPIFY_API_VERSION = 'api_version';
+
+    public const SHOPIFY_ADMIN_BASE_URL = 'https://%s.myshopify.com/admin';
+    public const SHOPIFY_API_BASE_URL = self::SHOPIFY_ADMIN_BASE_URL . '/api/%s';
+    public const SHOPIFY_ENDPOINT_OAUTH_AUTHORIZE = self::SHOPIFY_ADMIN_BASE_URL . '/oauth/authorize';
+    public const SHOPIFY_ENDPOINT_OAUTH_ACCESS_TOKEN = self::SHOPIFY_ADMIN_BASE_URL . '/oauth/access_token';
+    public const SHOPIFY_ENDPOINT_PRODUCTS = self::SHOPIFY_API_BASE_URL . '/products.json';
+    public const SHOPIFY_ENDPOINT_ORDERS = self::SHOPIFY_API_BASE_URL . '/orders.json';
+    public const SHOPIFY_ENDPOINT_CUSTOMERS = self::SHOPIFY_API_BASE_URL . '/customers.json';
+    public const SHOPIFY_ENDPOINT_WEBHOOKS = self::SHOPIFY_API_BASE_URL . '/webhooks.json';
+    public const SHOPIFY_ENDPOINT_SMART_COLLECTIONS = self::SHOPIFY_API_BASE_URL . '/smart_collections.json';
+    public const SHOPIFY_ENDPOINT_CUSTOM_COLLECTIONS = self::SHOPIFY_API_BASE_URL . '/custom_collections.json';
+    public const SHOPIFY_ENDPOINT_METAFIELDS = self::SHOPIFY_API_BASE_URL . '/metafields.json';
+    public const SHOPIFY_ENDPOINT_GRAPHQL = self::SHOPIFY_API_BASE_URL . '/graphql.json';
+
+    public const SHOPIFY = [
+        self::SHOPIFY_STORE_DOMAIN,
+        self::SHOPIFY_API_KEY,
+        self::SHOPIFY_API_SECRET,
+        self::SHOPIFY_ACCESS_TOKEN,
+        self::SHOPIFY_API_VERSION,
+    ];
+
+    public const SHOPIFY_STANDARD_ENDPOINTS = [
+        'oauth_authorize' => self::SHOPIFY_ENDPOINT_OAUTH_AUTHORIZE,
+        'oauth_access_token' => self::SHOPIFY_ENDPOINT_OAUTH_ACCESS_TOKEN,
+        'products' => self::SHOPIFY_ENDPOINT_PRODUCTS,
+        'orders' => self::SHOPIFY_ENDPOINT_ORDERS,
+        'customers' => self::SHOPIFY_ENDPOINT_CUSTOMERS,
+        'webhooks' => self::SHOPIFY_ENDPOINT_WEBHOOKS,
+        'smart_collections' => self::SHOPIFY_ENDPOINT_SMART_COLLECTIONS,
+        'custom_collections' => self::SHOPIFY_ENDPOINT_CUSTOM_COLLECTIONS,
+        'metafields' => self::SHOPIFY_ENDPOINT_METAFIELDS,
+        'graphql' => self::SHOPIFY_ENDPOINT_GRAPHQL,
+    ];
 }
