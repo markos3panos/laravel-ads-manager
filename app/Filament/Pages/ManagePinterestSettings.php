@@ -24,7 +24,7 @@ class ManagePinterestSettings extends Page implements HasForms
 
     protected static \BackedEnum|string|null $navigationIcon = 'heroicon-o-cog-6-tooth';
 
-    protected static ?string $navigationLabel = 'Pintest Settings';
+    protected static ?string $navigationLabel = 'Pinterest Settings';
 
     protected static \UnitEnum|string|null $navigationGroup = 'Configuration';
 
