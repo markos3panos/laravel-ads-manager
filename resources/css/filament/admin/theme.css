@@ -1,0 +1,14 @@
+/* resources/css/filament/admin/theme.css */
+@import "tailwindcss"; /* <-- Tailwind v4 entry, required */
+
+@import "../../../../vendor/filament/filament/resources/css/theme.css";
+
+/* Make sure Tailwind sees your Filament PHP/Blade files */
+@source "../../../../app/Filament";
+@source "../../../../resources/views/filament";
+@source "../../../../vendor/filament/**/*.blade.php";
+
+/* Override: increase select dropdown max-height */
+.fi-select-input .fi-dropdown-panel {
+    max-height: calc(var(--spacing) * 90) !important;
+}
