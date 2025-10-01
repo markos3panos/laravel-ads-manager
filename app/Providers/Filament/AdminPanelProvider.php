@@ -58,7 +58,7 @@ class AdminPanelProvider extends PanelProvider
                 Authenticate::class,
             ])
             ->viteTheme([
-                'resources/css/app.css'
+                'resources/css/filament/admin/theme.css'
             ])->spa();
     }
 }
